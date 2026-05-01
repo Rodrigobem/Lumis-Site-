@@ -34,14 +34,14 @@ body::before{content:’’;position:fixed;inset:0;background:url(“data:image/
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:500;height:72px;padding:0 60px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,border-color .4s,backdrop-filter .4s;border-bottom:1px solid transparent;}
 nav.scrolled{background:rgba(5,5,5,.88);backdrop-filter:blur(24px);border-color:var(–border);}
-.nav-logo{font-size:22px;font-weight:800;letter-spacing:-1px;color:var(–white);text-decoration:none;cursor:none;}
+.nav-logo{font-size:22px;font-weight:800;letter-spacing:-1px;color:var(–yellow);text-decoration:none;cursor:none;}
 .nav-logo em{color:var(–yellow);font-style:normal;text-shadow:0 0 20px var(–glow);}
 .nav-links{display:flex;gap:32px;list-style:none;}
 .nav-links a{font-family:‘DM Mono’,monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(–gray);text-decoration:none;cursor:none;transition:color .2s;position:relative;}
 .nav-links a::after{content:’’;position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(–yellow);transition:width .3s;}
 .nav-links a:hover{color:var(–white);}
 .nav-links a:hover::after{width:100%;}
-.nav-cta{font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(–black);background:var(–yellow);border:none;padding:10px 22px;cursor:none;font-weight:600;transition:transform .2s,box-shadow .3s;}
+.nav-cta{font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(–black);background:var(–yellow);border:none;border:none;padding:10px 22px;cursor:none;font-weight:600;transition:transform .2s,box-shadow .3s;}
 .nav-cta:hover{transform:translateY(-1px);box-shadow:0 8px 28px var(–glow);}
 
 /* SECTIONS */
@@ -61,7 +61,7 @@ section{position:relative;z-index:1;}
 .corners span:nth-child(4){bottom:24px;right:24px;border-bottom:1px solid var(–yellow);border-right:1px solid var(–yellow);opacity:.4;}
 
 .hero-label{font-family:‘DM Mono’,monospace;font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(–yellow);margin-bottom:28px;opacity:0;animation:fadeUp .8s ease forwards .2s;}
-.hero-title{font-size:clamp(52px,7.5vw,104px);font-weight:800;letter-spacing:-3px;line-height:.92;margin-bottom:28px;opacity:0;animation:fadeUp .8s ease forwards .4s;}
+.hero-title{font-size:clamp(36px,6vw,104px);font-weight:800;letter-spacing:-2px;line-height:.95;margin-bottom:28px;opacity:0;animation:fadeUp .8s ease forwards .4s;}
 .hero-title .y{color:var(–yellow);text-shadow:0 0 60px rgba(255,204,0,.45);}
 .hero-title .o{-webkit-text-stroke:1px rgba(255,255,255,.25);color:transparent;}
 .hero-sub{font-family:‘DM Mono’,monospace;font-size:13px;color:var(–gray);line-height:1.8;max-width:500px;margin-bottom:44px;opacity:0;animation:fadeUp .8s ease forwards .6s;}
@@ -198,6 +198,7 @@ footer{border-top:1px solid var(–border);padding:48px 80px;display:flex;align-
 nav{padding:0 24px;}
 .nav-links{display:none;}
 #hero,#servicos,#sobre,#cases,#contato{padding-left:24px;padding-right:24px;}
+.hero-title{font-size:clamp(32px,9vw,52px);letter-spacing:-1px;}
 .stats-grid,.services-grid,.sobre-grid,.contact-grid{grid-template-columns:1fr;}
 .cases-grid{grid-template-columns:1fr;}
 .form-row{grid-template-columns:1fr;}
